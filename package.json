@@ -1,0 +1,13 @@
+{
+  "name": "jsio-es6-codemod",
+  "bin": {
+    "jsio-codeshift": "./bin/jsio-codeshift.js"
+  },
+  "dependencies": {
+    "jscodeshift": "^0.3.27",
+    "jsio": "git+https://github.com/gameclosure/js.io.git"
+  },
+  "scripts": {
+    "mod-import": "./node_modules/.bin/jscodeshift -t es6-imports.js oldCodeExamples/imports.js --dry --print --run-in-band"
+  }
+}
