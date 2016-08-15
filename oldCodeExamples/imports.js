@@ -31,5 +31,10 @@ import .InputEvent as exports.InputEvent;
 
 
 // ---- ----
-// Should warn
+// Should warn: multiple args
 jsio('import ObjectPool', { supressErrors: true });
+
+var doDynamicImport = function () {
+  // Should warn: top level
+  jsio('import Timer');
+};

@@ -57,6 +57,14 @@ const transformImport = (j, item) => {
   console.log('\n');
   // console.log('item=', item);
 
+  if (
+    !item.parent ||
+    !item.parent.parent ||
+    item.parent.parent.name !== 'program'
+  ) {
+    throw new Error('Imports must be top level', item.parent.parent.type);
+  }
+
   if (item.value.arguments.length !== 1) {
     throw new Error('Arguments length is not 1', item.value.arguments.length);
   }
