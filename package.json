@@ -10,6 +10,6 @@
     "named-regexp": "^0.1.1"
   },
   "scripts": {
-    "mod-import": "./node_modules/.bin/jscodeshift -t es6-imports.js oldCodeExamples/imports.js --dry --print --run-in-band"
+    "mod-import": "./node_modules/.bin/jscodeshift -t mods/es6-imports.js oldCodeExamples/imports.js --dry --print --run-in-band"
   }
 }
