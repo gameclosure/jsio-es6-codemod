@@ -5,7 +5,9 @@
   },
   "dependencies": {
     "jscodeshift": "^0.3.27",
-    "jsio": "git+https://github.com/gameclosure/js.io.git"
+    "jsio": "git+https://github.com/gameclosure/js.io.git",
+    "lodash": "^4.15.0",
+    "named-regexp": "^0.1.1"
   },
   "scripts": {
     "mod-import": "./node_modules/.bin/jscodeshift -t es6-imports.js oldCodeExamples/imports.js --dry --print --run-in-band"
