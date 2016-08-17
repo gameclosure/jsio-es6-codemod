@@ -3,7 +3,6 @@
 
 // Single import
 import device;
-import .Widget;
 
 
 // Single relative import
